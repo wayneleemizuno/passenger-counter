@@ -1,38 +1,41 @@
 <!DOCTYPE html>
-<div>
-    <html lang="en">
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mini Passenger Counter</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Wayne Lee">
+    <title>Mini Head Counter</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 
-    <body>
-        <header>
-            <h1>Mini Passenger Counter</h1>
-        </header>
+<body>
+    <header>
+        <h1><span class="nowrap">Mini Head Counter</span></h1>
+    </header>
 
-        <main>
-
-            <h2 class="p-count">Passenger Count</h2>
-
+    <main>
+        <div class="current-box">
+            <h2 class="current">Current Count</h2>
             <h2 id="count-el">0</h2>
+        </div>
 
+        <div class="main-buttons">
             <button id="increment-btn" onclick="increment()">Increment</button>
             <button id="save-btn" onclick="save()">Save & Reset</button>
+        </div>
 
-            <p id="save-el"> Previous Entries: </p>
+        <h2 class="previous">Previous Entries:</h2>
+        <div class="record-box">
+            <p id="records"></p>
+        </div>
+    </main>
 
-        </main>
+    <footer>
+        <p>&copy; Wayne Lee</p>
+    </footer>
 
-        <footer>
-            <p>&copy; Wayne Lee</p>
-        </footer>
+    <script src="index.js"></script>
+</body>
 
-        <script src="index.js"></script>
-    </body>
-
-    </html>
-</div>
+</html>

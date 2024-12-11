@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COLOURS */
+:root {
+    --BG-COLOUR: whitesmoke;
+    --HDFT-BG-COLOUR: rgb(255, 230, 71);
+    --HDFT-FONT-COLOUR: #3d646e;
+    --TITLE-FONT-COLOUR: #3d646e;
+    --COUNTEL-COLOUR: #da7f00;
+    --BTN-TEXT-COLOUR: whitesmoke;
+    --RECORD-COLOUR: #756653;
+    --BUTTON-SHADOW-COLOUR: rgb(123, 60, 15);
+}
+
+.nowrap {
+    text-wrap: nowrap;
+}
+
+/* GENERAL */
+
+html {
+    background-color: var(--BG-COLOUR);
+    font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif, "Coiny";
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--HDFT-BG-COLOUR);
+    padding: 1rem;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    max-height: 20vh;
+    position: sticky;
+    top: 0;
+    color: var(--HDFT-FONT-COLOUR);
+    z-index: 10;
+}
+
+header h1 {
+    font-size: calc(1rem + 1.6vw);
+    text-transform: uppercase;
+    font-family: "Coiny";
+}
+
+/* MAIN BODY */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.current-box {
+    text-align: center;
+    padding: 1.5rem 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.current, .previous {
+    color: var(--TITLE-FONT-COLOUR);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+#count-el {
+    font-size: calc(2rem + 5vh);
+    color: var(--COUNTEL-COLOUR);
+}
+
+.main-buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: calc(2rem + 5vh);
+}
+
+button {
+    color: var(--BTN-TEXT-COLOUR);
+    font-weight: bold;
+    width: 150px;
+    padding: 1rem;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 4px 4px 5px var(--BUTTON-SHADOW-COLOUR);
+}
+
+button:active {
+    box-shadow: none;
+}
+
+
+#increment-btn {
+    background: darkred;
+}
+
+#save-btn {
+    background: darkgreen;
+}
+
+.record-box {
+    width: 80%;
+    max-width: 500px;
+    border: 2px solid darkgrey;
+    padding: 1.5rem;
+}
+
+#records {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--RECORD-COLOUR);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--HDFT-BG-COLOUR);
+    text-align: center;
+    color: var(--HDFT-FONT-COLOUR);
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+}
